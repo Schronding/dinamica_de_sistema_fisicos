@@ -55,13 +55,15 @@ def analizar_ciclos_rc(nombre_archivo, columna_tiempo, columna_voltaje, umbral_b
 
 # --- CONFIGURACIÓN ---
 # Reemplaza con el nombre de tu archivo de Excel
-NOMBRE_DEL_ARCHIVO = 'tiempoyvoltaje2k14s.xlsx' 
-
+# NOMBRE_DEL_ARCHIVO = 'tiempoyvoltaje2k14s.xlsx' Para 14 segundos
+NOMBRE_DEL_ARCHIVO = 'tiempoyvoltaje1k7s.xlsx' # Para 7 segundos
 # Reemplaza con los nombres exactos de tus columnas
 # (Simulink usualmente guarda el tiempo en una variable y los datos en otra,
 # al exportar a CSV/Excel pueden llamarse 'Time' y 'Data' o los nombres que les diste)
-COLUMNA_TIEMPO = 't (0.01s)'
-COLUMNA_VOLTAJE = 'V'
+# COLUMNA_TIEMPO = 't (0.01s)'  Para 14 segundos
+# COLUMNA_VOLTAJE = 'V'         Para 14 segundos
+COLUMNA_TIEMPO = 'Tiempo(0.01s)' # Para 7 segundos
+COLUMNA_VOLTAJE = 'V1' # Para 7 segundos 
 
 # Umbrales para detectar los ciclos (puedes ajustarlos)
 UMBRAL_BAJO_V = 0.0014       # Voltaje por debajo del cual consideramos el capacitor descargado
