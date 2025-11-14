@@ -85,7 +85,7 @@ def analizar_y_validar(csv_file, R_valor, time_col, volt_col, es_indice_t=False)
     plt.savefig(output_filename)
     print(f"Gráfico guardado como: {output_filename}")
 
-# Experimento 1 (1kΩ)
+# Experimento 1 (1kOhm)
 analizar_y_validar(
     csv_file='tiempoyvoltaje1k7s_conpromedio.csv',
     R_valor=1000,
@@ -94,7 +94,7 @@ analizar_y_validar(
     es_indice_t=True 
 )
 
-# Experimento 2 (2kΩ)
+# Experimento 2 (2kOhm)
 analizar_y_validar(
     csv_file='datos_exp_2k.csv', 
     R_valor=2000,
